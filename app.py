@@ -309,4 +309,9 @@ def toggle_quantity(id, action):
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
+    init_db()
     app.run(debug=True)
+else:
+    # When running in production, initialize the database
+    with app.app_context():
+        db.create_all()
