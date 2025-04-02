@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Expiry Tracker - Smart Grocery Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #45a049;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .screenshot {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tech-stack img {
+            height: 50px;
+            margin: 10px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+        
+        .tech-stack img:hover {
+            filter: grayscale(0%);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">
+                <i class="bi bi-basket me-2"></i>
+                Grocery Expiry Tracker
+            </h1>
+            <p class="lead mb-4">
+                A smart web application to manage your groceries, track expiry dates, and get recipe suggestions
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/MaahiMishra12222768/grocery_expiry_tracker" class="btn btn-light btn-lg">
+                    <i class="bi bi-github me-2"></i>View on GitHub
+                </a>
+                <a href="https://github.com/MaahiMishra12222768/grocery_expiry_tracker#setup" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-download me-2"></i>Quick Start
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-clock-history feature-icon"></i>
+                            <h3 class="h5">Expiry Tracking</h3>
+                            <p>Never waste food again! Track expiry dates and get timely reminders.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-card-checklist feature-icon"></i>
+                            <h3 class="h5">Smart Categories</h3>
+                            <p>Organize items by categories and filter them easily.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book feature-icon"></i>
+                            <h3 class="h5">Recipe Suggestions</h3>
+                            <p>Get recipe ideas for items nearing their expiry date.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Built With</h2>
+            <div class="row justify-content-center tech-stack">
+                <div class="col-12 text-center">
+                    <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python">
+                    <img src="https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png" alt="Flask">
+                    <img src="https://www.sqlalchemy.org/img/sqla_logo.png" alt="SQLAlchemy">
+                    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Bootstrap">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Getting Started</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <pre class="mb-0"><code>
+# Clone the repository
+git clone https://github.com/MaahiMishra12222768/grocery_expiry_tracker.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python app.py
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">
+                Created by Maahi Mishra
+                <a href="https://github.com/MaahiMishra12222768" class="text-white ms-2">
+                    <i class="bi bi-github"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
